@@ -43,7 +43,7 @@ const RevealSection = () => {
         {sisters.map((sister, index) => (
           <div 
             key={index}
-            className={`flex flex-col items-center text-center transition-all duration-[2500ms] cubic-bezier(0.2, 0.8, 0.2, 1) ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}
+            className={`flex flex-col items-center text-center transition-all duration-[2500ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}
             style={{ transitionDelay: isVisible ? `${index * 400}ms` : '0ms' }}
           >
             <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white font-extralight tracking-tight mb-8 drop-shadow-lg">
@@ -54,7 +54,7 @@ const RevealSection = () => {
                 Result: <span className="text-gold opacity-100">{sister.result}</span>
               </p>
               <div 
-                className={`h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-[3000ms] cubic-bezier(0.2, 0.8, 0.2, 1) ${isVisible ? 'w-full scale-x-100' : 'w-0 scale-x-0'}`}
+                className={`h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-[3000ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] ${isVisible ? 'w-full scale-x-100' : 'w-0 scale-x-0'}`}
                 style={{ transitionDelay: isVisible ? `${index * 400 + 1000}ms` : '0ms' }}
               />
             </div>

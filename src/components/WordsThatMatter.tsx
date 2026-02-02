@@ -44,7 +44,7 @@ const WordsThatMatter = () => {
             className="overflow-hidden py-2"
           >
             <h3 
-              className={`font-serif text-4xl md:text-6xl lg:text-8xl text-white font-extralight transition-all duration-[2000ms] cubic-bezier(0.2, 0.8, 0.2, 1) ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
+              className={`font-serif text-4xl md:text-6xl lg:text-8xl text-white font-extralight transition-all duration-[2000ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
               style={{ transitionDelay: isVisible ? `${index * 600}ms` : '0ms' }}
             >
               <span className={index === 1 ? "text-gradient-gold drop-shadow-[0_0_30px_rgba(251,191,36,0.1)]" : "opacity-90"}>

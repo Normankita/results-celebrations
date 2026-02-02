@@ -31,7 +31,7 @@ const HeroSection = () => {
         Today isn’t just <br className="md:hidden" /> about results.
       </h1>
       
-      <div className={`mt-8 md:mt-12 transition-all duration-[2500ms] cubic-bezier(0.2, 0.8, 0.2, 1) ${showSubtext ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div className={`mt-8 md:mt-12 transition-all duration-[2500ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] ${showSubtext ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <p className="font-sans text-lg md:text-xl lg:text-2xl text-slate-400 font-light tracking-[0.3em] uppercase">
           It’s about discipline, sacrifice, and resilience.
         </p>

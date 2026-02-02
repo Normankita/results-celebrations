@@ -25,24 +25,24 @@ const PhotoShowcase = () => {
 
       <div className="max-w-7xl w-full relative z-10 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-8">
         {/* Light's Photo */}
-        <div className="flex-1 w-full order-1 md:order-1 flex flex-col items-center">
+        <div className="flex-1 w-full order-1 md:order-1 flex flex-col items-center group">
           <div className="relative w-full aspect-[4/5] glass rounded-[2.5rem] p-5 transition-all duration-1000 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:scale-[1.03] animate-float">
             <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-white/5 to-transparent opacity-50" />
             <div className="relative w-full h-full overflow-hidden rounded-[2rem]">
-              <Image src={photos[0].src} alt={photos[0].alt} fill className="object-cover group-hover:scale-110 transition-transform duration-[2000ms]" sizes="50vw" priority />
+              <Image src={photos[0].src} alt={photos[0].alt} fill className="object-cover group-hover:scale-110 transition-transform duration-[2000ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]" sizes="50vw" priority />
             </div>
           </div>
           <p className="mt-6 md:hidden font-serif text-xl text-slate-500 tracking-widest uppercase opacity-40">Light</p>
         </div>
 
         {/* Central Titles - Shared Parity */}
-        <div className="order-2 md:order-2 flex flex-col items-center justify-center text-center space-y-8 md:px-8 py-12 md:py-0">
+        <div className="order-2 md:order-2 flex flex-col items-center justify-center text-center space-y-8 md:px-8 py-12 md:py-0 hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.2,0.8,0.2,1)] group">
           <div className="h-24 w-[1px] bg-gradient-to-b from-transparent via-gold/40 to-transparent hidden md:block" />
           
           <div className="space-y-6 relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-1 h-1 bg-gold rounded-full animate-pulse" />
             
-            <h4 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gradient-gold font-light tracking-tight leading-none italic animate-glow">
+            <h4 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gradient-gold font-light tracking-tight leading-none italic animate-glow group-hover:animate-none group-hover:drop-shadow-[0_0_30px_rgba(251,191,36,0.5)] transition-all duration-700">
               Vision & Grace
             </h4>
             
@@ -52,7 +52,7 @@ const PhotoShowcase = () => {
               <div className="h-[1px] w-8 bg-gold" />
             </div>
 
-            <h4 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gradient-gold font-light tracking-tight leading-none italic animate-glow" style={{ animationDelay: '1.5s' }}>
+            <h4 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gradient-gold font-light tracking-tight leading-none italic animate-glow group-hover:animate-none group-hover:drop-shadow-[0_0_30px_rgba(251,191,36,0.5)] transition-all duration-700" style={{ animationDelay: '1.5s' }}>
               Strength & Excellence
             </h4>
 
@@ -67,11 +67,11 @@ const PhotoShowcase = () => {
         </div>
 
         {/* Catherine's Photo */}
-        <div className="flex-1 w-full order-3 md:order-3 flex flex-col items-center">
+        <div className="flex-1 w-full order-3 md:order-3 flex flex-col items-center group">
           <div className="relative w-full aspect-[4/5] glass rounded-[2.5rem] p-5 transition-all duration-1000 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:scale-[1.03] animate-float" style={{ animationDelay: '2s' }}>
             <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-white/5 to-transparent opacity-50" />
             <div className="relative w-full h-full overflow-hidden rounded-[2rem]">
-              <Image src={photos[1].src} alt={photos[1].alt} fill className="object-cover group-hover:scale-110 transition-transform duration-[2000ms]" sizes="50vw" />
+              <Image src={photos[1].src} alt={photos[1].alt} fill className="object-cover group-hover:scale-110 transition-transform duration-[2000ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]" sizes="50vw" />
             </div>
           </div>
           <p className="mt-6 md:hidden font-serif text-xl text-slate-500 tracking-widest uppercase opacity-40">Catherine</p>
